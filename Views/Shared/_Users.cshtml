@@ -1,0 +1,21 @@
+﻿@* model data is imported but we aren't doing anything with it *@
+@model GroupProject.Models.User
+
+@{
+    ViewData["Title"] = "Partial View Users";
+}
+
+<h4>Quick Search User ID</h4>
+
+<div>
+    <p>partial view tip: A user can own multiple accounts but an account but an account may not have more than one user.</p>
+</div>
+
+<form asp-action="Search" method="post">
+    <div class="form-group">
+        <label asp-for="UserId">User ID</label>
+        <input type="number" name="userId" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>

@@ -1,0 +1,91 @@
+﻿@model IEnumerable<GroupProject.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+    var isAdmin = Context.Session.GetString("UserIsAdmin"); // Check if user is logged in
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>User Index</h1>
+
+<p>
+    @if (isAdmin == "True") // only displays if user is admin
+    {
+        <a asp-action="Register" class="btn btn-primary">Create New</a>
+    }
+    <a asp-action="SearchAjaxView" class="btn btn-secondary">Search Users</a>
+    @* <p>@isAdmin</p> debugging*@
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.UserId)
+            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+            if (userName != null) // check if userName isnt null
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gender)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.City)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserStatus)
+                        </td>
+                        <td>
+
+                            <a asp-action="Details" asp-route-id="@item.UserId">Details</a>
+
+                            @if (isAdmin == "True") // only displays if user is admin
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
+                            }
+
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <h2>Please Login to View.</h2>
+            }
+        }
+
+    </tbody>
+</table>
+
+
+@* <div>
+    <br></br>
+    @await Html.PartialAsync("_Users", Model)
+</div> *@

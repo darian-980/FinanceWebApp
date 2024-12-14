@@ -1,0 +1,38 @@
+﻿@model GroupProject.Models.Transaction
+
+@{
+    ViewData["Title"] = "Search Transactions";
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>Search Transactions</h1>
+
+@{
+    if (userName != null) // check if userName isnt null
+    {
+<form asp-action="Search" method="post">
+    <div class="form-group">
+        <label asp-for="AccountId">Account ID</label>
+        <input type="number" name="accountId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AmountChange">Amount Change</label>
+        <input type="number" name="amountChange" class="form-control" step="0.01" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<br />
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    }
+    else
+    {
+        <h2>Please Login to View.</h2>
+    }
+}
+
+@* <div>
+    <br></br>
+    @await Html.PartialAsync("_Transaction", Model)
+</div> *@

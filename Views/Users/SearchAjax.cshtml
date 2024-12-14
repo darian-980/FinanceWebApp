@@ -1,0 +1,86 @@
+﻿@model IEnumerable<GroupProject.Models.User>
+
+@{
+    ViewBag.Title = "Search Ajax";
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h2>Search Ajax</h2>
+@{
+    if (userName != null) // check if userName isnt null
+    {
+<div>
+    <b>Search by:</b><br />
+    <input type="radio" name="searchBy" value="Name" checked> Name<br />
+    <input type="radio" name="searchBy" value="UserStatus"> UserStatus<br />
+    <input type="radio" name="searchBy" value="Gender"> Gender<br />
+    <input type="radio" name="searchBy" value="City"> City<br />
+    <br />
+    <input type="text" id="searchText" placeholder="Enter search term" />
+    <button id="searchButton">Search</button>
+</div>
+
+<table class="table" id="resultsTable">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.UserId)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Gender)</th>
+            <th>@Html.DisplayNameFor(model => model.City)</th>
+            <th>@Html.DisplayNameFor(model => model.UserStatus)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Results will be dynamically populated here -->
+    </tbody>
+</table>
+
+<br />
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+}
+else
+{
+            <h2>Please Login to View.</h2>
+}
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#searchButton").click(function () {
+                const searchBy = $("input[name='searchBy']:checked").val();
+                const search = $("#searchText").val();
+
+                $.ajax({
+                    url: '@Url.Action("SearchAjax", "Users")',
+                    type: 'GET',
+                    data: { searchBy: searchBy, search: search },
+                    success: function (data) {
+                        const tbody = $("#resultsTable tbody");
+                        tbody.empty(); // Clear existing rows so that the results are refreshed
+
+                        if (data.length === 0) {
+                            tbody.append("<tr><td colspan='5'>No results found</td></tr>");
+                        } else {
+                            data.forEach(user => {
+                                tbody.append(`
+                                            <tr>
+                                                <td>${user.userId}</td>
+                                                <td>${user.name}</td>
+                                                <td>${user.gender}</td>
+                                                <td>${user.city}</td>
+                                                <td>${user.userStatus}</td>
+                                            </tr>
+                                        `);
+                            });
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred while fetching data.");
+                    }
+                });
+            });
+        });
+    </script>
+}

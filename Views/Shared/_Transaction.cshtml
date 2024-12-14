@@ -1,0 +1,21 @@
+﻿@* model data is imported but we aren't doing anything with it *@
+@model GroupProject.Models.Transaction
+
+@{
+    ViewData["Title"] = "Partial View Transaction";
+}
+
+<h4>Quick Search Transaction ID</h4>
+
+<div>
+    <p>partial view tip: the transaction date and time is saved to the database/table when the transaction is created and is updated when it is edited. If there was an edit to the transaction then the IsEdited boolean turns True.</p>
+</div>
+
+<form asp-action="Search" method="post">
+    <div class="form-group">
+        <label asp-for="TransactionId">Transaction ID</label>
+        <input type="number" name="transactionId" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>

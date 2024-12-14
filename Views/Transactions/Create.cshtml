@@ -1,0 +1,62 @@
+﻿@model GroupProject.Models.Transaction
+
+@{
+    ViewData["Title"] = "Create";
+    var isAdmin = Context.Session.GetString("UserIsAdmin"); // Check if user is admin
+}
+
+<h1>Create</h1>
+
+<h4>Transaction</h4>
+<hr />
+@if (isAdmin == "True") // only displays if user is admin
+{
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="AccountId" class="control-label"></label>
+                <select asp-for="AccountId" class="form-control" asp-items="ViewBag.Account">
+                    <option value="">Select an Account</option>
+                </select>
+                <span asp-validation-for="AccountId" class="text-danger"></span>
+            </div>
+
+@*             <div class="form-group">
+                <label asp-for="AccountId" class="control-label"></label>
+                <input asp-for="AccountId" class="form-control" />
+                <span asp-validation-for="AccountId" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="AmountChange" class="control-label"></label>
+                <input asp-for="AmountChange" class="form-control" />
+                <span asp-validation-for="AmountChange" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br />
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <br />
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+}
+else
+{
+    <h2>Admin access only.</h2>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<div>
+    <br></br>
+    @await Html.PartialAsync("_Transaction", Model)
+</div>

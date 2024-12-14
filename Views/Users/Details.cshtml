@@ -1,0 +1,59 @@
+﻿@model GroupProject.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>Details</h1>
+
+@if (userName != null) // check if userName isnt null
+{
+    <div>
+        <h4>User</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.City)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.City)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserStatus)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserStatus)
+            </dd>
+        </dl>
+    </div>
+
+
+<div>
+    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model?.UserId">Edit</a>
+    <br />
+    <br />
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+}
+else
+{
+    <h2>Please Login to View.</h2>
+}
+
+<div>
+    <br></br>
+    @await Html.PartialAsync("_Users", Model)
+</div>

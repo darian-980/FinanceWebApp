@@ -1,0 +1,91 @@
+﻿@model IEnumerable<GroupProject.Models.Transaction>
+
+@{
+    ViewData["Title"] = "Index";
+    var isAdmin = Context.Session.GetString("UserIsAdmin"); // Check if user is logged in
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>Transaction Index</h1>
+
+<p>
+    @if (isAdmin == "True") // only displays if user is admin
+    {
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    }
+    <a asp-action="Search" class="btn btn-secondary">Search Transactions</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TransactionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account.AccountName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account.User.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AmountChange)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TransactionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsEdited)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@{
+    if (userName != null) // check if userName isnt null
+    {
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.TransactionId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccountId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Account.AccountName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Account.User.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AmountChange)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransactionDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsEdited)
+                    </td>
+                    <td>
+                            <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a>
+
+                            @if (isAdmin == "True") // only displays if user is admin
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.TransactionId">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
+                            }
+                    </td>
+                </tr>
+                }
+            }
+            else
+            {
+                <h2>Please Login to View.</h2>
+            }
+        }
+    </tbody>
+</table>

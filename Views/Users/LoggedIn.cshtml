@@ -1,0 +1,21 @@
+﻿@model GroupProject.Models.User
+
+@{
+    ViewData["Title"] = "LoggedIn";
+    var isAdmin = Context.Session.GetString("UserIsAdmin"); // Check if user is logged in as admin
+}
+
+
+@if (isAdmin == "True") // only displays if user is admin
+{
+    <h2>You have logged in as an Admin.</h2>
+    <p>Admin privileges granted.</p>
+}else{
+    <h2>You have logged in.</h2>
+}
+
+<div>
+    <br />
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Continue</a>
+
+</div>

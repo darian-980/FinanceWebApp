@@ -1,0 +1,28 @@
+﻿@model GroupProject.Models.User
+
+@{
+    ViewData["Title"] = "Search Users";
+}
+
+<h1>Search Users</h1>
+
+<form asp-action="Search" method="post">
+    <div class="form-group">
+        <label asp-for="UserId">User ID</label>
+        <input type="number" name="userId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input type="text" name="name" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<br />
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+
+@* <div>
+    <br></br>
+    @await Html.PartialAsync("_Users", Model)
+</div> *@

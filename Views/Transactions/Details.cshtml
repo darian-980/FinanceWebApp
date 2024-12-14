@@ -1,0 +1,45 @@
+﻿@model GroupProject.Models.Transaction
+
+@{
+    ViewData["Title"] = "Details";
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>Details</h1>
+
+@if (userName != null) // check if userName isnt null
+{
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AmountChange)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AmountChange)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" class="btn btn-primary"  asp-route-id="@Model?.TransactionId">Edit</a>
+    <br />
+    <br />
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+}
+else
+{
+    <h2>Please Login to View.</h2>
+}
+
+<div>
+    <br></br>
+    @await Html.PartialAsync("_Transaction", Model)
+</div>

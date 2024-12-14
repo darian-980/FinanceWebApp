@@ -1,0 +1,23 @@
+﻿@* model data is imported but we aren't doing anything with it *@
+@model GroupProject.Models.Account
+
+@{
+    ViewData["Title"] = "Partial View Accounts";
+}
+
+<h4>Quick Search Account ID</h4>
+
+<div>
+    <p>partial view tip: The name of the account owner is stored in the Usertbl and is referenced by UserId as the foreign key for the Accounttbl</p>
+</div>
+
+<form asp-action="Search" method="post">
+    <div class="form-group">
+        <label asp-for="AccountId">Account ID</label>
+        <input type="number" name="accountId" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+

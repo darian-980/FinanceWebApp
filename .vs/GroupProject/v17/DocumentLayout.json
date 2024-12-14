@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mynam\\source\\repos\\GroupProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\models\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:models\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\searchajax.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\searchajax.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\accounts\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\accounts\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\transactions\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\transactions\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\loggedin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\loggedin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\accounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\accounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|c:\\users\\mynam\\source\\repos\\groupproject\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E257ADB-31EC-40D0-9516-B17E816BECF0}|GroupProject.csproj|solutionrelative:views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Models\\UserContext.cs",
+              "RelativeDocumentMoniker": "Models\\UserContext.cs",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Models\\UserContext.cs",
+              "RelativeToolTip": "Models\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T05:22:37.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchAjax.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\SearchAjax.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\SearchAjax.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\SearchAjax.cshtml",
+              "RelativeToolTip": "Views\\Users\\SearchAjax.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T08:04:52.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:58:08.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:52:52.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:39:25.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "Views\\Users\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:15:57.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Logout.cshtml",
+              "RelativeToolTip": "Views\\Users\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:14:25.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswE4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:07:51.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Transactions\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Search.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Transactions\\Search.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Search.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T08:10:07.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Accounts\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Accounts\\Search.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Accounts\\Search.cshtml",
+              "RelativeToolTip": "Views\\Accounts\\Search.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T08:10:14.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAOgAAAAAAAAAAAASwKAAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:09:20.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoggedIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\LoggedIn.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\LoggedIn.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\LoggedIn.cshtml",
+              "RelativeToolTip": "Views\\Users\\LoggedIn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:12:20.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Accounts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Accounts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Accounts\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Accounts\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T08:01:47.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Register.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Register.cshtml",
+              "RelativeToolTip": "Views\\Users\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:41:12.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:58:01.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:07:45.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mynam\\source\\repos\\GroupProject\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T07:01:16.036Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

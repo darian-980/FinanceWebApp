@@ -1,0 +1,86 @@
+﻿@model IEnumerable<GroupProject.Models.Account>
+
+@{
+    ViewData["Title"] = "Index";
+    var isAdmin = Context.Session.GetString("UserIsAdmin"); // Check if user is logged in
+    var userName = Context.Session.GetString("UserName"); // fetch username (used to check if a userName session variable exists)
+}
+
+<h1>Account Index</h1>
+
+<p>
+    @if (isAdmin == "True") // only displays if user is admin
+    {
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    }
+    <a asp-action="Search" class="btn btn-secondary">Search Accounts</a>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Balance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Locked)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@{
+    if (userName != null) // check if userName isnt null
+    {
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccountId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccountName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Balance)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Locked)
+                    </td>
+                    <td>
+                            <a asp-action="Details" asp-route-id="@item.AccountId">Details</a>
+
+                            @if (isAdmin == "True") // only displays if user is admin
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.AccountId">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.AccountId">Delete</a>
+                            }
+                    </td>
+                </tr>
+                }
+            }
+            else
+            {
+                <h2>Please Login to View.</h2>
+            }
+        }
+    </tbody>
+</table>

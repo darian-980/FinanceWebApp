@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Financial Home Page";
+    var Name = Context.Session.GetString("Name"); // fetch name
+    var displayText = "";
+    if (Name != null) // check if userName isnt null
+    {
+        displayText = "Welcome back, " + Name; // assigned userName to displayName
+    }
+    else
+    {
+        displayText = "Please Log In.";
+    }
+
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+
+    <h2>Financial Home Page</h2>
+    <div>
+        <a href="/Users/Index">Users</a> |
+        <a href="/Accounts/Index">Accounts</a> |
+        <a href="/Transactions/Index">Transactions</a> 
+    </div>
+    <br />
+    <br />
+    <h3>@displayText</h3>
+</div>
